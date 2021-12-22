@@ -1,0 +1,57 @@
+.deuxieme {
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .image {
+        background: url(./../assets/img/store-01.jpg) center/cover;
+        height: 90vh;
+    }
+
+    .secdeux {
+        width: 90%;
+        margin: 0 auto;
+        border: gold 1px dashed;
+    }
+
+    .porange {
+        color: #a67245;
+        font-family: 'fontallure';
+        font-weight: normal;
+        text-transform: none;   
+        font-size: 2rem;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-family: 'fontpoppins';
+        padding-bottom: 30px;
+    }
+
+    .plat {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 40px;
+    }
+
+    p {
+        padding: 0 20px 0;
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
+        border-radius: 500px;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    h5 {
+        color: lightgrey;
+        padding-bottom: 20px;
+    }
+}

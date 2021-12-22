@@ -1,0 +1,86 @@
+header {
+    background: url(./../assets/img/bg-slider-06.jpg) center/cover;
+    height: 100vh;
+}
+
+.first {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto; 
+    color: white;
+    padding-top: 10px;
+
+    h2 {
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+        font-family: 'fontallure', sans-serif;
+        margin-top: -20px;
+    }
+
+    .topnav {
+        font-size: 0.6rem;
+        display: flex;
+        justify-content: space-around;
+        width: 75%;
+        text-transform: uppercase;
+
+        h3 {
+            font-family: 'fontrobo', sans-serif;
+            font-weight: 100;
+        }
+    }
+
+
+    .topimg {
+        display: flex;
+        justify-content: space-around;
+        width: 15%;
+
+        img {
+        width: 15px;
+        height: 15px;
+    }
+    }
+}
+
+.topmid {
+    color: white;
+    text-align: center;
+    align-items: center;
+
+    .bienvenue {
+        padding-top: 100px;
+    }
+
+    .porange {
+        color: #a67245;
+        font-family: 'fontallure';
+        font-weight: normal;
+        font-size: 2rem;
+        text-transform: none;
+   
+    }
+
+    h2 {
+        font-size: 3rem;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        font-family: 'fontpoppins';
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 40px;
+    }
+
+    p {
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+    }
+}

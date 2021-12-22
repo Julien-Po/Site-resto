@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./scss/style.css">
     <title>Resto Wanmin</title>
 </head>
 <body>
     <header>
-    <div class="menu">
-        <h2>Resto</h2>
+    <nav class="first">
+        <div>
+       <h2>Resto</h2>
+    </div>
+    <div class="topnav">
         <h3>Home</h3>
         <h3>Reservations</h3>
         <h3>Menu</h3>
@@ -22,31 +25,39 @@
         <h3>Shop</h3>
         <h3>Contact</h3>
     </div>
-    <div class="navbar">
-        <h2>Resto</h2>
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
-    </div>
+    <div class="topimg">
+        <img src="./assets/img/facebook.svg" alt="facebook">
+        <img src="./assets/img/twitter.svg" alt="twitter">
+        <img src="./assets/img/iconmonstr-instagram-11.svg" alt="insta">    
+    </div> 
+    </nav>
+    <section class="topmid">
     <div class="bienvenue">
         <h2><div class="porange">Welcome to</div>The Resto</h2>
-        <img src="./img/ic-plate-big.png" alt="logoblanc">
+        <img src="./assets/img/ic-plate-big.png" alt="logoblanc">
         <p>We serve only the freshest ingredients !</p>
     </div>
+    </section>
     </header>
     <section class="deuxieme">
+        <div class="secdeux">
         <h2><div class="porange">Discover</div>our store</h2>
-        <img src="./img/ic-plate.png" alt="logoplat">
+        <img src="./assets/img/ic-plate.png" alt="logoplat" class="plat">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
             Minima, doloribus porro. Totam, ut voluptate nulla numquam facere voluptas dolorum consequuntur similique aliquid nam 
             corporis, iusto recusandae. Totam dolorum adipisci inventore esse magni obcaecati perferendis?</p>
-            <img src="./img/avatar-01.jpg" alt="Zechef">
-            <h2>Russel Stephens</h2>
-            <h3>Chef Cook</h3>
+            <img src="./assets/img/avatar-01.jpg" alt="Zechef" class="Zechef">
+            <h4>Russel Stephens</h4>
+            <h5>Chef Cook</h5>
+        </div>
+            <div class="image"></div>
     </section>
+    <div class="discover-container">
     <nav class="troisieme">
-        <h2><div class="porange">Discover</div>our store</h2>
-        <img src="./img/ic-plate.png" alt="">
+        <h2 class="porange">Discover</h2>
+        <div class="plat">
+         <img src="./assets/img/ic-plate.png" alt="logoplat">
+        </div>
      <ul>
         <li>Breakfast</li>
         <li>Lunch</li>
@@ -55,38 +66,39 @@
         <li>Other</li>
     </ul>
     <div class="gridmenu">
-        <img src="./img/dish-item-01.jpg" alt="">
+        <img src="./assets/img/dish-item-01.jpg" alt="">
         <h4>Italian Source Mushroom</h4>
         <p>Mushroom/Garlic/Veggies</p>
-        <img src="./img/dish-item-02.jpg" alt="">
+        <img src="./assets/img/dish-item-02.jpg" alt="">
         <h4>Fried potatoes with Garlic</h4>
         <p>Potatoes/Olive Oil/Garlic</p>
-        <img src="./img/dish-item-03.jpg" alt="">
+        <img src="./assets/img/dish-item-03.jpg" alt="">
         <h4>Tenu roast source</h4>
         <p>Tuna/Potatoes/Rice</p>
-        <img src="./img/dish-item-04.jpg" alt="">
+        <img src="./assets/img/dish-item-04.jpg" alt="">
         <h4>Roast Pork (4 sauces)</h4>
         <p>Pork/Veggies/Shoyu</p>
-        <img src="./img/dish-item-05.jpg" alt="">
+        <img src="./assets/img/dish-item-05.jpg" alt="">
         <h4>Salted fried chicken</h4>
         <p>Chicken/Olive Oil/Salt</p>
-        <img src="./img/dish-item-06.jpg" alt="">
+        <img src="../assets/img/dish-item-06.jpg" alt="">
         <h4>Crab with curry sources</h4>
         <p>Crab/Potatoes/Rice</p>
-        <img src="./img/dish-item-07.jpg" alt="">
+        <img src="./assets/img/dish-item-07.jpg" alt="">
         <h4>Imported Salmon Steak</h4>
         <p>Salmon/Veggies/Oil</p>
-        <img src="./img/dish-item-08.jpg" alt="">
+        <img src="./assets/img/dish-item-08.jpg" alt="">
         <h4>Baked potato pizza</h4>
         <p>Potatoes/Bread/Cheese</p>
     </div>    
     </nav>
+   </div>
     <section>
         <div>
         <div>
         <h2>Time</h2>
         <h2>Open</h2>
-        <img src="./img/ic-plate.png" alt="">
+        <img src="./assets/img/ic-plate.png" alt="">
         <h2>MONDAY-FRIDAY</h2>
         <p>7AM-11AM (Breakfast)<br>
            11AM-10PM(Lunch/Dinner)</p>
@@ -101,7 +113,7 @@
         <div>
             <h2>Reservation</h2>
             <h2>Online booking</h2>
-            <img src="./img/ic-plate.png" alt="">
+            <img src="./assets/img/ic-plate.png" alt="">
             <input type="date" value="2021-12-21" min="2021-12-13" max="2099-12-31">
             <input type="time"  min="07:00" max="20:00">
             <input type="text" value="name">
@@ -112,39 +124,36 @@
     </section>
     <nav>
         <h2>Upcoming</h2>
-        <h2>our event</h2>
-        <img src="./img/ic-plate.png" alt="">
+        <h3>our event</h3>
+        <img src="./assets/img/ic-plate.png" alt="">
      <div>
-         <h2>08</h2>
-         <h2>July</h2>
-         <h3>Night Insperescu Party</h3>
-         <p>Restaurant Resto</p>
-         <i class="fas fa-map-marker-alt"></i>
-         <p>10:00pm-6am</p>
-        <i class="far fa-clock"></i>
-        <a href="" class="ticket">Buy Tickets</a>
+         <h2>08 <br>
+             July</h2>
+            <h3>Night Insperescu Party</h3>
+            <p><i class="fas fa-map-marker-alt"></i>Restaurant Resto</p>
+            <p><i class="far fa-clock"></i>10:00pm-6am</p>
+            <a href="" class="ticket">Buy Tickets</a>
     </div>
     <div>
-        <h2>08</h2>
+        <h2>08 <br>
+            July</h2>
         <h2>DJ Robagrhume</h3>
-        <p>Restaurant Resto</p>
-        <i class="fas fa-map-marker-alt"></i>
-        <p>10:00pm-6am</p>
-       <i class="far fa-clock"></i>
-       <a href="" class="ticket">Buy Tickets</a>
+        <p><i class="fas fa-map-marker-alt"></i>Restaurant Resto</p>
+        <p> <i class="far fa-clock"></i>10:00pm-6am</p>
+         <a href="" class="ticket">Buy Tickets</a>
     </div>
     <div>
-        <h2>08</h2>
-        <h2>July</h2>
-        <h3>Thousand Celebrities at Johnnie Night</h3>
-        <i class="fas fa-map-marker-alt"></i>
-        <p>10:00pm-6am</p>
-       <i class="far fa-clock"></i>
-       <a href="" class="ticket">Buy Tickets</a>
+        <h2>08 <br>
+            July</h2>
+     </div>
+     <div>
+        <h3><i class="fas fa-map-marker-alt"></i>Thousand Celebrities at Johnnie Night</h3>
+        <p><i class="far fa-clock"></i>10:00pm-6am</p>
+        <a href="" class="ticket">Buy Tickets</a>
     </div>
     </nav>
     <section>
-        <img src="./img/avatar-02.jpg" alt="">
+        <img src="./assets/img/avatar-02.jpg" alt="">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A culpa reiciendis ea ullam voluptatibus alias vero id tenetur 
             quas aspernatur aperiam ducimus animi temporibus veritatis debitis molestias inventore, nemo accusamus commodi fugiat 
             neque natus velit! Alias nobis sit architecto quaerat.</p>
@@ -161,10 +170,18 @@
             <label for="Email"></label>
             <input type="text" value="Your email adress">
             <h2>Follow us : </h2>
+        <div>
             <i class="fab fa-facebook-f"></i>
+        </div>
+        <div>
             <i class="fab fa-twitter"></i>
+        </div>
+        <div>
             <i class="fab fa-instagram"></i>
+        </div>
+        <div>    
             <i class="fab fa-pinterest"></i>
+        </div>    
         </div>
     </footer>
 </body>

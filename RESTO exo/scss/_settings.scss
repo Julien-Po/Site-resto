@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "fontrobo";
+    src: url(../assets/font/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "fontallure";
+    src: url(../assets/font/Allura-Regular.ttf);
+}
+
+@font-face {
+    font-family: "fontpoppins";
+    src: url(../assets/font/Poppins-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+    
+}
