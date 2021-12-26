@@ -139,7 +139,7 @@ header {
 
 .deuxieme .image {
   background: url(./../assets/img/store-01.jpg) center/cover;
-  height: 90vh;
+  height: 100vh;
 }
 
 .deuxieme .secdeux {
@@ -188,6 +188,18 @@ header {
   padding-bottom: 20px;
 }
 
+.troisieme .gridbg:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 620px;
+  background: url(./../assets/img/bg-menu-01.jpg) center/cover;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  bottom: -330px;
+}
+
 .troisieme h2 {
   text-align: center;
   -webkit-box-align: center;
@@ -200,13 +212,7 @@ header {
   font-family: 'fontallure';
   font-weight: normal;
   margin-top: 30px;
-}
-
-.troisieme .plat {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
+  margin-bottom: 30px;
 }
 
 .troisieme ul {
@@ -215,5 +221,68 @@ header {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  width: 60%;
+  margin: 0 auto;
+  -webkit-text-decoration: underline lightgrey;
+          text-decoration: underline lightgrey;
+  margin-bottom: 30px;
+}
+
+.troisieme .gridmenu {
+  position: relative;
+  background: #fbfaf6;
+  color: #222;
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
+  border-top: 4px solid #af7746;
+  padding: 15px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.troisieme .gridcell {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 60% 15%;
+      grid-template-columns: 25% 60% 15%;
+  border-bottom: 1px dashed rgba(128, 128, 128, 0.18);
+  padding: 30px 0;
+  margin: 0 20px;
+}
+
+.troisieme .gridcell img {
+  border-radius: 150px;
+  height: 80px;
+  width: 80px;
+}
+
+.troisieme .gridcell .gridtext {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 10px;
+}
+
+.troisieme .gridcell .gridprice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */

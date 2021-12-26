@@ -1,5 +1,17 @@
 .troisieme {
    
+.gridbg:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 620px;
+        background: url(./../assets/img/bg-menu-01.jpg) center/cover;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        bottom: -330px;
+      }
+
+
     h2 {
         text-align: center;
         align-items: center;
@@ -10,16 +22,57 @@
         font-family: 'fontallure';
         font-weight: normal;
         margin-top: 30px;
+        margin-bottom: 30px;
     }
 
-    .plat {
-        align-items: center;
-        text-align: center;
-
-    }
 
     ul {
         display: flex;
         justify-content: space-around;
+        width: 60%;
+        margin: 0 auto;
+        text-decoration: underline lightgrey;
+        margin-bottom: 30px;
+    }
+
+    .gridmenu {
+        position: relative;
+        background: #fbfaf6;
+        color: #222;
+        width: 85%;
+        max-width: 850px;
+        margin: 0 auto;
+        border-top: 4px solid #af7746;
+        padding: 15px 0;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .gridcell {
+        display: grid;
+        grid-template-columns: 25% 60% 15%;
+        border-bottom: 1px dashed rgba(128, 128, 128, 0.18);
+        padding: 30px 0;
+        margin: 0 20px;
+
+        img {
+            border-radius: 150px;
+            height: 80px;
+            width: 80px;
+        }
+
+        .gridtext {
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 10px;
+        }
+
+        .gridprice {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
