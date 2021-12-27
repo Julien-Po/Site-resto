@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "fontrobo";
   src: url(../assets/font/Roboto-Regular.ttf);
@@ -188,7 +189,12 @@ header {
   padding-bottom: 20px;
 }
 
-.troisieme .gridbg:before {
+.troisieme {
+  background: #21201e;
+  margin-bottom: 200px;
+}
+
+.troisieme:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -197,7 +203,7 @@ header {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   left: 50%;
-  bottom: -330px;
+  top: 1980px;
 }
 
 .troisieme h2 {
@@ -223,9 +229,10 @@ header {
       justify-content: space-around;
   width: 60%;
   margin: 0 auto;
-  -webkit-text-decoration: underline lightgrey;
-          text-decoration: underline lightgrey;
+  -webkit-text-decoration: underline #A1A1A1;
+          text-decoration: underline #A1A1A1;
   margin-bottom: 30px;
+  color: white;
 }
 
 .troisieme .gridmenu {
@@ -284,5 +291,110 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.quatrieme {
+  width: 80%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  background: #21201e;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Rend le menu déroulant caché par défaut */
+}
+
+.quatrieme .bgcolor {
+  background: #000;
+}
+
+.quatrieme .porange {
+  color: #a67245;
+  font-family: 'fontallure';
+  font-weight: normal;
+  margin-top: 30px;
+  font-size: 3rem;
+}
+
+.quatrieme .orange {
+  color: #a67245;
+  font-weight: normal;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-family: "fontrobo";
+}
+
+.quatrieme h3 {
+  color: white;
+  text-transform: uppercase;
+  font-family: "fontpoppins";
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.quatrieme img {
+  width: 35px;
+  height: 35px;
+}
+
+.quatrieme p {
+  color: white;
+}
+
+.quatrieme li {
+  list-style: none !important;
+  color: #FFF;
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.quatrieme nav ul {
+  background-color: #64abfb;
+  padding: 0;
+  margin: 0;
+}
+
+.quatrieme nav ul li {
+  list-style: none;
+  line-height: 44px;
+  float: left;
+  background-color: #64abfb;
+}
+
+.quatrieme nav ul li a {
+  color: #FFF;
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.quatrieme li a:hover {
+  border-bottom: 3px #FFF solid;
+}
+
+.quatrieme nav ul li ul {
+  display: none;
+}
+
+.quatrieme nav ul li:hover ul {
+  /* Affiche la dropNav au survol de la souris avec la class .drop */
+  z-index: 99999;
+  display: list-item !important;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: -10px;
+}
+
+.quatrieme nav ul li:hover ul li {
+  float: none;
 }
 /*# sourceMappingURL=style.css.map */

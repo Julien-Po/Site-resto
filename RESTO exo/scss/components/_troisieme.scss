@@ -1,6 +1,9 @@
 .troisieme {
-   
-.gridbg:before {
+   background: #21201e;
+   margin-bottom: 200px;
+
+
+&:before {
         content: "";
         position: absolute;
         width: 100%;
@@ -8,7 +11,7 @@
         background: url(./../assets/img/bg-menu-01.jpg) center/cover;
         transform: translate(-50%, -50%);
         left: 50%;
-        bottom: -330px;
+        top: 1980px;
       }
 
 
@@ -31,9 +34,11 @@
         justify-content: space-around;
         width: 60%;
         margin: 0 auto;
-        text-decoration: underline lightgrey;
+        text-decoration: underline #A1A1A1 ;
         margin-bottom: 30px;
+        color: white;
     }
+
 
     .gridmenu {
         position: relative;
