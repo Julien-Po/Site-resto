@@ -1,0 +1,106 @@
+.cinquieme {
+    .entete {
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .porange {
+            color: #a67245;
+                font-family: 'fontallure';
+                font-weight: normal;
+                margin-top: 30px;
+                font-size: 2rem;
+            }
+            h4 {
+            color: white;
+            text-transform: uppercase;
+            font-family: "fontpoppins";
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            transform: translateY(-10px);
+        }
+
+        img {
+            height: 30px;
+            width: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .gridevent {
+        display: grid;
+        grid-template-columns: 58% 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+          "event1 event3"
+          "event2 event3";
+        gap: 20px;
+        width: 80%;
+        margin: 0 auto;
+
+        .eventgauchehaut {
+            grid-area: event1;
+        }
+
+        .eventgauchebas {
+            grid-area: event2;
+        }
+
+        .eventdroite {
+            grid-area: event3;
+        }
+
+        .eventgauchehaut {
+        display: grid;
+        grid-template-columns: 40% 60%;
+
+        .gridimg {
+            background: url(./../assets/img/event-01.jpg) center/cover;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+           .date {
+                background: #333;
+                height: 75px;
+                width: 75px;
+                margin: 0 auto;
+                color: #eee;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                line-height: 22px;
+
+                h6 {
+                    font-size: 1.5rem;
+                }
+
+                span {
+                    font-family: "fontrobo";
+                }
+           }
+        }
+
+        .gridtext {
+            background: white;
+            padding-top: 30px;
+            padding-left: 10px;
+
+            h3 {
+                display: flex;
+                text-align: left;
+                padding-bottom: 10px;
+                letter-spacing: 2px;
+                font-family: 'fontpoppins';
+                font-weight: 600;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+}
