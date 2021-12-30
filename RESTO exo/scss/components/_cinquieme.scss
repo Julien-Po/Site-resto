@@ -89,18 +89,214 @@
         .gridtext {
             background: white;
             padding-top: 30px;
-            padding-left: 10px;
+            padding-bottom: 40px;
 
             h3 {
                 display: flex;
-                text-align: left;
+                text-align: center;
+                justify-content: center;
                 padding-bottom: 10px;
                 letter-spacing: 2px;
                 font-family: 'fontpoppins';
                 font-weight: 600;
                 font-size: 1rem;
             }
+
+            .pimage {
+                display: flex;
+                gap: 20px;
+                align-items: left;
+                padding-left: 25px;
+
+                i {
+                    margin-right: 3px;
+                    font-size: 0.5rem;
+                    transform: translateY(-2px);
+                    padding-right: 3px;
+                }
+
+                p {
+                    font-family: "fontrobo";
+                    font-size: 0.7rem;
+                    color: grey;
+                    padding-bottom: 20px;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                padding-left: 20px;
+                font-family: "fontrobo";
+                font-size: 0.8rem;
+            }
         }
     }
 }
+
+.eventgauchebas {
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    .gridimg {
+        background: url(./../assets/img/event-02.jpg) center/cover;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+       .date {
+            background: #333;
+            height: 75px;
+            width: 75px;
+            margin: 0 auto;
+            color: #eee;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            line-height: 22px;
+
+            h6 {
+                font-size: 1.5rem;
+            }
+
+            span {
+                font-family: "fontrobo";
+            }
+       }
+    }
+
+    .gridtext {
+        background: white;
+        padding-top: 30px;
+        padding-bottom: 40px;
+
+        h3 {
+            display: flex;
+            text-align: left;
+            justify-content: left;
+            padding-bottom: 10px;
+            letter-spacing: 2px;
+            font-family: 'fontpoppins';
+            font-weight: 600;
+            font-size: 1rem;
+            padding-left: 30px;
+        }
+
+        .pimage {
+            display: flex;
+            gap: 20px;
+            align-items: left;
+            padding-left: 25px;
+
+            i {
+                margin-right: 3px;
+                font-size: 0.5rem;
+                transform: translateY(-2px);
+                padding-right: 3px;
+            }
+
+            p {
+                font-family: "fontrobo";
+                font-size: 0.7rem;
+                color: grey;
+                padding-bottom: 20px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding-left: 20px;
+            font-family: "fontrobo";
+            font-size: 0.8rem;
+        }
+    }
+}
+
+        .eventdroite {
+             background: url(./../assets/img/event-03.jpg);
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             padding-top: 20px;
+             padding-bottom: 20px;
+           
+            .bgcolor {
+                background: white;
+                width: 80%;
+                margin: 0 auto;
+               
+            }
+            .date {
+                background: #333;
+                height: 75px;
+                width: 75px;
+                margin: 0 auto;
+                color: #eee;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                line-height: 22px;
+
+                h6 {
+                    font-size: 1.5rem;
+                }
+    
+                span {
+                    font-family: "fontrobo";
+                }
+            }
+
+            h3 {
+                margin-top: 30px;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                font-family: "fontpoppins";
+                margin-bottom: 15px;
+            }
+
+            .pimage {
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                text-align: center;
+                padding-left: 35px;
+                padding-bottom: 50px;
+
+                i {
+                    margin-right: 3px;
+                    font-size: 0.5rem;
+                    transform: translateY(-2px);
+                    padding-right: 3px;
+                }
+    
+                p {
+                    font-family: "fontrobo";
+                    font-size: 0.7rem;
+                    color: grey;
+                    padding-bottom: 20px;
+                }
+            }
+
+            a {
+                display: flex;
+                justify-content: center;
+                text-decoration: none;
+                color: black;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-family: "fontrobo";
+                font-size: 0.8rem;
+                padding-bottom: 50px;
+            }
+            
+        }
 }

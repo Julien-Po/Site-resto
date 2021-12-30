@@ -565,18 +565,334 @@ header {
 .cinquieme .gridevent .eventgauchehaut .gridtext {
   background: white;
   padding-top: 30px;
-  padding-left: 10px;
+  padding-bottom: 40px;
 }
 
 .cinquieme .gridevent .eventgauchehaut .gridtext h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: left;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 10px;
   letter-spacing: 2px;
   font-family: 'fontpoppins';
   font-weight: 600;
+  font-size: 1rem;
+}
+
+.cinquieme .gridevent .eventgauchehaut .gridtext .pimage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding-left: 25px;
+}
+
+.cinquieme .gridevent .eventgauchehaut .gridtext .pimage i {
+  margin-right: 3px;
+  font-size: 0.5rem;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  padding-right: 3px;
+}
+
+.cinquieme .gridevent .eventgauchehaut .gridtext .pimage p {
+  font-family: "fontrobo";
+  font-size: 0.7rem;
+  color: grey;
+  padding-bottom: 20px;
+}
+
+.cinquieme .gridevent .eventgauchehaut .gridtext a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-left: 20px;
+  font-family: "fontrobo";
+  font-size: 0.8rem;
+}
+
+.cinquieme .eventgauchebas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+}
+
+.cinquieme .eventgauchebas .gridimg {
+  background: url(./../assets/img/event-02.jpg) center/cover;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.cinquieme .eventgauchebas .gridimg .date {
+  background: #333;
+  height: 75px;
+  width: 75px;
+  margin: 0 auto;
+  color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 22px;
+}
+
+.cinquieme .eventgauchebas .gridimg .date h6 {
+  font-size: 1.5rem;
+}
+
+.cinquieme .eventgauchebas .gridimg .date span {
+  font-family: "fontrobo";
+}
+
+.cinquieme .eventgauchebas .gridtext {
+  background: white;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.cinquieme .eventgauchebas .gridtext h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+  font-family: 'fontpoppins';
+  font-weight: 600;
+  font-size: 1rem;
+  padding-left: 30px;
+}
+
+.cinquieme .eventgauchebas .gridtext .pimage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding-left: 25px;
+}
+
+.cinquieme .eventgauchebas .gridtext .pimage i {
+  margin-right: 3px;
+  font-size: 0.5rem;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  padding-right: 3px;
+}
+
+.cinquieme .eventgauchebas .gridtext .pimage p {
+  font-family: "fontrobo";
+  font-size: 0.7rem;
+  color: grey;
+  padding-bottom: 20px;
+}
+
+.cinquieme .eventgauchebas .gridtext a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-left: 20px;
+  font-family: "fontrobo";
+  font-size: 0.8rem;
+}
+
+.cinquieme .eventdroite {
+  background: url(./../assets/img/event-03.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.cinquieme .eventdroite .bgcolor {
+  background: white;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cinquieme .eventdroite .date {
+  background: #333;
+  height: 75px;
+  width: 75px;
+  margin: 0 auto;
+  color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 22px;
+}
+
+.cinquieme .eventdroite .date h6 {
+  font-size: 1.5rem;
+}
+
+.cinquieme .eventdroite .date span {
+  font-family: "fontrobo";
+}
+
+.cinquieme .eventdroite h3 {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-family: "fontpoppins";
+  margin-bottom: 15px;
+}
+
+.cinquieme .eventdroite .pimage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-left: 35px;
+  padding-bottom: 50px;
+}
+
+.cinquieme .eventdroite .pimage i {
+  margin-right: 3px;
+  font-size: 0.5rem;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  padding-right: 3px;
+}
+
+.cinquieme .eventdroite .pimage p {
+  font-family: "fontrobo";
+  font-size: 0.7rem;
+  color: grey;
+  padding-bottom: 20px;
+}
+
+.cinquieme .eventdroite a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "fontrobo";
+  font-size: 0.8rem;
+  padding-bottom: 50px;
+}
+
+.sixieme {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.sixieme:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background: url(./../assets/img/gmap.jpg) center/cover;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 3700px;
+  z-index: -1;
+}
+
+.sixieme .prefoot {
+  background: white;
+  margin-top: 100px;
+  padding: 50px;
+  z-index: 2;
+}
+
+.sixieme .prefoot:before {
+  content: "";
+  position: absolute;
+  background: url(./../assets/img/avatar-02.jpg) center/cover;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 3450px;
+  border-radius: 150px;
+  width: 45px;
+  height: 45px;
+  z-index: 10000;
+}
+
+.sixieme .prefoot p {
+  font-family: "fontrobo";
+  font-size: 0.8rem;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.sixieme .prefoot h2 {
+  text-align: center;
+  font-family: "fontrobo";
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.sixieme .prefoot h3 {
+  text-align: center;
+  font-weight: normal;
+  font-family: "fontrobo";
+  color: #a67245;
   font-size: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
