@@ -33,7 +33,20 @@ header {
   height: 100vh;
 }
 
-.first {
+@media (min-width: 400px) {
+  header header {
+    height: 30vh;
+  }
+  header h3 {
+    display: none;
+    height: 0;
+  }
+  header h2 {
+    padding-top: 20px;
+  }
+}
+
+header .first {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,7 +63,7 @@ header {
   padding-top: 10px;
 }
 
-.first h2 {
+header .first h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,7 +74,7 @@ header {
   margin-top: -20px;
 }
 
-.first .topnav {
+header .first .topnav {
   font-size: 0.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,12 +85,12 @@ header {
   text-transform: uppercase;
 }
 
-.first .topnav h3 {
+header .first .topnav h3 {
   font-family: 'fontrobo', sans-serif;
   font-weight: 100;
 }
 
-.first .topimg {
+header .first .topimg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,12 +99,12 @@ header {
   width: 15%;
 }
 
-.first .topimg img {
+header .first .topimg img {
   width: 15px;
   height: 15px;
 }
 
-.topmid {
+header .topmid {
   color: white;
   text-align: center;
   -webkit-box-align: center;
@@ -99,11 +112,11 @@ header {
           align-items: center;
 }
 
-.topmid .bienvenue {
+header .topmid .bienvenue {
   padding-top: 100px;
 }
 
-.topmid .porange {
+header .topmid .porange {
   color: #a67245;
   font-family: 'fontallure';
   font-weight: normal;
@@ -111,20 +124,20 @@ header {
   text-transform: none;
 }
 
-.topmid h2 {
+header .topmid h2 {
   font-size: 3rem;
   letter-spacing: 10px;
   text-transform: uppercase;
   font-family: 'fontpoppins';
 }
 
-.topmid img {
+header .topmid img {
   width: 30px;
   height: 30px;
   margin-bottom: 40px;
 }
 
-.topmid p {
+header .topmid p {
   letter-spacing: 5px;
   text-transform: uppercase;
   font-size: 0.8rem;
@@ -140,6 +153,19 @@ header {
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   background: white;
+}
+
+@media screen and (max-width: 400px) {
+  .deuxieme .image {
+    display: none;
+  }
+  .deuxieme .deuxieme {
+    display: -ms-grid;
+    display: grid;
+    background: white;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .deuxieme .image {
@@ -191,6 +217,13 @@ header {
 .deuxieme h5 {
   color: lightgrey;
   padding-bottom: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .troisieme .gridmenu {
+    display: -ms-grid;
+    display: grid;
+  }
 }
 
 .troisieme:before {
@@ -893,6 +926,82 @@ header {
   font-weight: normal;
   font-family: "fontrobo";
   color: #a67245;
+  font-size: 1rem;
+}
+
+.foot {
+  padding-top: 200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.foot .footleft {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  padding-bottom: 40px;
+}
+
+.foot h2 {
+  color: #a67245;
+  font-family: 'fontallure';
+  font-weight: normal;
+  margin-top: 30px;
+  font-size: 2rem;
+  padding-left: 50px;
+}
+
+.foot p {
+  padding-left: 50px;
+}
+
+.foot .footright {
+  padding-top: 30px;
+}
+
+.foot .mailright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.foot label {
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-family: "fontrobo";
+  color: white;
+}
+
+.foot input {
+  width: 40%;
+  background: #21201e;
+  border: 1px solid #676161;
+  padding: 5px 10px;
+  color: #676161;
+}
+
+.foot .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+  padding-top: 20px;
+  color: #676161;
+  font-size: 15px;
+}
+
+.foot h3 {
+  text-transform: uppercase;
+  color: white;
+  font-family: 'fontrobo';
   font-size: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

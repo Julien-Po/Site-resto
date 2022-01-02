@@ -1,0 +1,64 @@
+.foot {
+    padding-top: 200px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .footleft {
+        width: 80%;
+        margin: 0 auto;
+        text-align: left;
+        padding-bottom: 40px;
+    }
+
+    h2 {
+        color: #a67245;
+        font-family: 'fontallure';
+        font-weight: normal;
+        margin-top: 30px;
+        font-size: 2rem;
+        padding-left: 50px;
+    }
+
+    p {
+        padding-left: 50px;
+    }
+    
+    .footright {
+       padding-top: 30px;
+        }
+
+        .mailright {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            font-family: "fontrobo";
+            color: white;
+        }
+
+        input {
+            width: 40%;
+            background: #21201e;
+            border: 1px solid #676161;
+            padding: 5px 10px;
+            color: #676161;
+        }
+
+        .image {
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+            padding-top: 20px;
+            color: #676161;
+            font-size: 15px;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            color: white;
+            font-family: 'fontrobo';
+            font-size: 1rem;
+        }
+    }

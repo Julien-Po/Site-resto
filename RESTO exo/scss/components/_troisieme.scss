@@ -1,5 +1,12 @@
 .troisieme {
 
+@media screen and (max-width:400px) {
+    .gridmenu {
+        display: grid;
+    }
+    
+}
+
 &:before {
         content: "";
         position: absolute;
