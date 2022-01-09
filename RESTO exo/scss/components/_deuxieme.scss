@@ -6,27 +6,23 @@
     background: white;
 
     @media screen and (max-width:400px) {
-        .image {
-            display: none;
-        }
-
-        .deuxieme {
-            display: grid;
-            background: white;
-            grid-template-columns: 1fr;
-        }
-        
+        grid-template-columns: 1fr;
     }
 
     .image {
         background: url(./../assets/img/store-01.jpg) center/cover;
         height: 100vh;
+
+        @media screen and (max-width:400px) {
+            display: none;
+        }
     }
 
     .secdeux {
         width: 90%;
         margin: 0 auto;
         border: gold 1px dashed;
+
     }
 
     .porange {

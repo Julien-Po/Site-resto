@@ -1,10 +1,16 @@
 .cinquieme {
+    @media screen and (max-width:400px) {
+        display: none;
+    }
     .entete {
         padding-top: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        
+        
+
 
         .porange {
             color: #a67245;
@@ -56,6 +62,8 @@
         .eventgauchehaut {
         display: grid;
         grid-template-columns: 40% 60%;
+
+        
 
         .gridimg {
             background: url(./../assets/img/event-01.jpg) center/cover;

@@ -12,6 +12,10 @@
         left: 50%;
         top: 3700px;
         z-index: -1;
+        @media screen and (max-width:400px) {
+            top: 4100px;
+        }
+
       }
 
     .prefoot {
@@ -31,6 +35,10 @@
         width: 45px;
         height: 45px;
         z-index: 10000;
+
+        @media screen and (max-width:400px) {
+            top: 3670px;
+        }
       }
 
       p {

@@ -3,11 +3,20 @@
     display: grid;
     grid-template-columns: 50% 50%;
 
+    @media screen and (max-width:400px) {
+        padding-top: 280px;
+    }
+
     .footleft {
         width: 80%;
         margin: 0 auto;
         text-align: left;
         padding-bottom: 40px;
+
+        @media screen and (max-width:400px) {
+            width: 100%;
+            padding-right: 20px;
+        }
     }
 
     h2 {
@@ -25,7 +34,7 @@
     
     .footright {
        padding-top: 30px;
-        }
+ }
 
         .mailright {
             display: flex;
@@ -44,6 +53,10 @@
             border: 1px solid #676161;
             padding: 5px 10px;
             color: #676161;
+
+            @media screen and (max-width:400px) {
+                width: 45%;
+            }
         }
 
         .image {
@@ -61,4 +74,5 @@
             font-family: 'fontrobo';
             font-size: 1rem;
         }
+        
     }

@@ -2,7 +2,7 @@ header {
     background: url(./../assets/img/bg-slider-06.jpg) center/cover;
     height: 100vh;
 
-    @media (min-width:400px) {
+    @media screen and (max-width:400px) {
 
         header {
             height: 30vh;

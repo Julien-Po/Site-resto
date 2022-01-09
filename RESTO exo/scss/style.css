@@ -33,7 +33,7 @@ header {
   height: 100vh;
 }
 
-@media (min-width: 400px) {
+@media screen and (max-width: 400px) {
   header header {
     height: 30vh;
   }
@@ -156,13 +156,7 @@ header .topmid p {
 }
 
 @media screen and (max-width: 400px) {
-  .deuxieme .image {
-    display: none;
-  }
-  .deuxieme .deuxieme {
-    display: -ms-grid;
-    display: grid;
-    background: white;
+  .deuxieme {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
@@ -171,6 +165,12 @@ header .topmid p {
 .deuxieme .image {
   background: url(./../assets/img/store-01.jpg) center/cover;
   height: 100vh;
+}
+
+@media screen and (max-width: 400px) {
+  .deuxieme .image {
+    display: none;
+  }
 }
 
 .deuxieme .secdeux {
@@ -219,13 +219,6 @@ header .topmid p {
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 400px) {
-  .troisieme .gridmenu {
-    display: -ms-grid;
-    display: grid;
-  }
-}
-
 .troisieme:before {
   content: "";
   position: absolute;
@@ -267,6 +260,12 @@ header .topmid p {
   color: white;
 }
 
+@media screen and (max-width: 400px) {
+  .troisieme ul {
+    width: 100%;
+  }
+}
+
 .troisieme .gridmenu {
   position: relative;
   background: #fbfaf6;
@@ -280,6 +279,13 @@ header .topmid p {
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
+}
+
+@media screen and (max-width: 400px) {
+  .troisieme .gridmenu {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .troisieme .gridcell {
@@ -338,6 +344,13 @@ header .topmid p {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 400px;
+}
+
+@media screen and (max-width: 400px) {
+  .quatrieme {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+  }
 }
 
 .quatrieme .bgcolor {
@@ -470,6 +483,12 @@ header .topmid p {
   padding: 10px 20px;
   background: black;
   border: none;
+}
+
+@media screen and (max-width: 400px) {
+  .cinquieme {
+    display: none;
+  }
 }
 
 .cinquieme .entete {
@@ -885,6 +904,12 @@ header .topmid p {
   z-index: -1;
 }
 
+@media screen and (max-width: 400px) {
+  .sixieme:after {
+    top: 4100px;
+  }
+}
+
 .sixieme .prefoot {
   background: white;
   margin-top: 100px;
@@ -904,6 +929,12 @@ header .topmid p {
   width: 45px;
   height: 45px;
   z-index: 10000;
+}
+
+@media screen and (max-width: 400px) {
+  .sixieme .prefoot:before {
+    top: 3670px;
+  }
 }
 
 .sixieme .prefoot p {
@@ -937,11 +968,24 @@ header .topmid p {
       grid-template-columns: 50% 50%;
 }
 
+@media screen and (max-width: 400px) {
+  .foot {
+    padding-top: 280px;
+  }
+}
+
 .foot .footleft {
   width: 80%;
   margin: 0 auto;
   text-align: left;
   padding-bottom: 40px;
+}
+
+@media screen and (max-width: 400px) {
+  .foot .footleft {
+    width: 100%;
+    padding-right: 20px;
+  }
 }
 
 .foot h2 {
@@ -984,6 +1028,12 @@ header .topmid p {
   border: 1px solid #676161;
   padding: 5px 10px;
   color: #676161;
+}
+
+@media screen and (max-width: 400px) {
+  .foot input {
+    width: 45%;
+  }
 }
 
 .foot .image {
